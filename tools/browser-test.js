@@ -5,12 +5,13 @@
 //
 // Usage: python3 -m http.server 8286   (in another terminal), then
 //        node tools/browser-test.js [path-to-chrome]
+// To test the live site instead: TEST_URL=https://magelvl12.github.io/d286-java-trainer/ node tools/browser-test.js
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
 const CHROME = process.argv[2] || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const URL = 'http://127.0.0.1:8286/';
+const URL = process.env.TEST_URL || 'http://127.0.0.1:8286/';
 const PORT = 9333;
 const shots = path.join(__dirname, 'screens');
 fs.mkdirSync(shots, { recursive: true });
