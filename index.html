@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="D286 Java">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>D286 Java Trainer</title>
+</head>
+<body>
+  <header id="topbar">
+    <button id="back" aria-label="Back" hidden>‹</button>
+    <h1 id="title">D286 Java Trainer</h1>
+  </header>
+
+  <main id="view"></main>
+
+  <nav id="tabbar">
+    <a href="#/" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+    <a href="#/rules" data-tab="rules"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.3 6.4.5-4.9 4.2 1.5 6.5L12 16l-5.6 3.5 1.5-6.5L3 8.8l6.4-.5z"/></svg>Rules</a>
+    <a href="#/errors" data-tab="errors"><svg viewBox="0 0 24 24"><path d="M12 3l10 18H2zm0 6v5m0 3v.5"/></svg>Errors</a>
+    <a href="#/decode" data-tab="decode"><svg viewBox="0 0 24 24"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>Decode</a>
+    <a href="#/progress" data-tab="progress"><svg viewBox="0 0 24 24"><path d="M4 20V10m6 10V4m6 16v-7m6 7H2"/></svg>Progress</a>
+  </nav>
+
+  <script src="js/highlight.js"></script>
+  <script src="content/problems.js"></script>
+  <script src="content/reference.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>

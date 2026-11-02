@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#171a21"/>
+  <text x="256" y="300" font-family="Menlo, monospace" font-size="200" font-weight="bold" fill="#7aa2ff" text-anchor="middle">{J}</text>
+  <text x="256" y="420" font-family="Helvetica, Arial, sans-serif" font-size="72" font-weight="bold" fill="#98a1b1" text-anchor="middle">D286</text>
+</svg>
